@@ -1,0 +1,121 @@
+/**************************
+
+Website Designed by Pesho
+
+**************************/
+
+html{
+    overflow-x: hidden;
+    min-height: 100%;
+    background: url('../img/bg.png');
+    position: relative;
+    animation-name: animateBg;
+    animation-timing-function: linear;
+    animation-duration: 2000s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    background-size: cover;
+	color: #333;
+}
+
+@keyframes animateBg {
+    100% { background-position:100000px 0;}
+}
+
+@-webkit-keyframes animateBg {
+    100% { background-position:100000px 0;}
+}
+
+@-moz-keyframes animateBg {
+    100% { background-position:100000px 0;}
+}
+
+@-o-keyframes animateBg {
+    100% { background-position:100000px 0;}
+}
+
+body{ 
+    font-family:"Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: #fff;
+    font-size: 18px;
+	padding: 0;
+    margin: 0 ;
+    overflow-x: hidden;
+    background-color: inherit;
+}
+.main{
+    overflow:hidden;
+}
+.navbar{
+    background-color: #000;
+    position: fixed;
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+.navbar-left img{
+    height: 50px;
+    width: 50px;
+}
+.navbar-title{
+    color: #fff;
+    text-align: left;
+    margin: 10px 10px 0 80px;
+    position: absolute;
+    font-weight: 900;
+    font-size: 20px;
+}
+.content{
+    max-width: 850px;
+    margin: 100px auto;
+    text-align: center;
+}
+#logo{
+    margin: 10px auto;
+    text-align: center;
+}
+#logo img{
+    max-width: 100%;
+    height: auto;
+}
+.inner-content{
+    margin: 0 20px 0 20px;
+}
+a.button{
+    display:inline-block;
+    padding:0.5em 4em 0.5em 4em;
+    margin:2em 0.3em 2em 0;
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 2px 2px 2px #000;
+    color:#FFFFFF;
+    background-color:#00b436;
+    text-align:center;
+    transition: all 0.2s;
+}
+a.button:hover{
+    background-color:#00a868;
+}
+
+
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 575px) {
+
+}
+@media screen and (max-width: 460px) {
+    p,h5{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 380px) {
+    a.button{
+        padding:0.5em 1.8em 0.5em 1.8em;
+    }
+}
+@media screen and (max-width: 340px) {
+    .navbar-title p,a.button{
+        font-size: 16px;
+    }
+}
